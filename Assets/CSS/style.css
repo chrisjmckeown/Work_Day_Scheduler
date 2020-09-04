@@ -20,16 +20,13 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
-.description{
-  white-space: pre-wrap;
-}
-
+/* Container the rows sit in */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
+/* rows contain an hour, description, and button */
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -40,6 +37,28 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  width: 20%;
+}
+
+.description{
+  white-space: pre-wrap;
+  width: 70%;
+  text-align: left;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  width: 10%;
+  cursor: pointer;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
 }
 
 .past {
@@ -57,15 +76,17 @@ textarea{
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
-}
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-}
+/* .clock {
+  height: 100px;
+  width: 70%;
+  line-height: 100px;  
+  margin: 150px auto 0;
+  padding: 0 50px;
+  background: #222;
+  color: #eee;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 7px #222;
+  text-shadow: 0 0 3px #fff;
+} */

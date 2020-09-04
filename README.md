@@ -17,6 +17,8 @@ Use the daily planner to create a schedule:
 * Timeblocks are color coded to indicate whether it is in the past, present, or future
 * Click into a timeblock to enter an event
 
+<img src="./Assets/Images/05-third-party-apis-homework-demo.gif" alt="A calendar" width="350" vertical-align="text-top" style="vertical-align:top"> 
+
 ## Technologies Utilized
 Primary technologies:
 * Moment.js
