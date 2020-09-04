@@ -20,6 +20,14 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
+
+.feedback {
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+}
+
 /* Container the rows sit in */
 .time-block{
   text-align: center;
@@ -75,18 +83,3 @@ textarea{
   background-color: #77dd77;
   color: white;
 }
-
-
-/* .clock {
-  height: 100px;
-  width: 70%;
-  line-height: 100px;  
-  margin: 150px auto 0;
-  padding: 0 50px;
-  background: #222;
-  color: #eee;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 0 7px #222;
-  text-shadow: 0 0 3px #fff;
-} */
