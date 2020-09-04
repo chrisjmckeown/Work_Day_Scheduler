@@ -64,6 +64,13 @@ textarea{
   cursor: pointer;
 }
 
+.fa-edit {
+  height:100%;
+  display: flex;
+  justify-content: center; /* For horizontal alignment */
+  align-items: center; /* For vertical alignment */
+}
+
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;

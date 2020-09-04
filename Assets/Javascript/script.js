@@ -45,11 +45,11 @@ $(document).ready(function () {
     // The above is from https://learn.jquery.com/events/event-delegation/ I need too research more into this
     $(document.body).on('click', '.saveBtn', function (event) {
         // variables for the value (description) and hour the edit is occuring on
-        var value = event.target.parentNode.childNodes[1].value;
-        var selectedTime = event.target.parentNode.childNodes[0].textContent;
+        var value = event.target.parentNode.parentNode.childNodes[1].value;
+        var selectedTime = event.target.parentNode.parentNode.childNodes[0].textContent;
 
         // block from editing past events (personal preference)
-        var selection = event.target.parentNode.childNodes[1].classList[1];
+        var selection = event.target.parentNode.parentNode.childNodes[1].classList[1];
         if (selection === "past") {
             $("#feedback").html("Can not edit a past time block");
             return;
@@ -111,7 +111,7 @@ $(document).ready(function () {
             row.append($('<div class="hour">' + timeblock + '</div>'));
             var description = $('<textarea class="description"></textarea>');
             row.append(description);
-            row.append($('<div class="saveBtn">Edit</div>'));
+            row.append($('<div class="saveBtn"><i class="far fa-edit"></i></div>'));
 
             // if the calender list contains a recording on at this date and time set the desciption
             var foundTimeblock = calendarList.find(x => x.datetime === timeStamp);
@@ -150,7 +150,7 @@ $(document).ready(function () {
         }
         timeblocks = [];
         for (var i = startTime; i < finishTime + 1; i++) {
-            timeblocks.push(moment(i,["HH"]).format("hh A"));
+            timeblocks.push(moment(i, ["HH"]).format("hh A"));
         }
         storeTimeblocks();
         renderCalendar();

@@ -1,6 +1,7 @@
 # Work Day Scheduler
 
 * [Description](#Description)
+* [Usage](#Usage)
 * [Technologies Utilized](#Technologies-Utilized)
 * [Code Quiz Link](#Code-Quiz-Link)
 * [Contact](#Contact)
@@ -10,14 +11,20 @@ A simple calendar application that allows the you to save events for each hour o
 
 This app runs in the browser and featuring dynamically updated HTML and CSS powered by jQuery. It includes the use of localStorage to save the calendar.
 
+## Usage
+To run the test navigate to the home page: <a href="https://chrisjmckeown.github.io/Work_Day_Scheduler/" target="_blank">Work Day Scheduler</a>
+
 Use the daily planner to create a schedule:
 * Open the planner
 * The current day is displayed at the top of the calendar
+    * Use the datepicker to view past and future days
 * View timeblocks for standard business hours
+    * Set your own work hours
 * Timeblocks are color coded to indicate whether it is in the past, present, or future
+    * Past timeblocks cannot be edited, personal preference.
 * Click into a timeblock to enter an event
 
-<img src="./Assets/Images/05-third-party-apis-homework-demo.gif" alt="A calendar" width="350" vertical-align="text-top" style="vertical-align:top"> 
+<img src="./Assets/Images/Example.gif" alt="A calendar" vertical-align="text-top" style="vertical-align:top"> 
 
 ## Technologies Utilized
 Primary technologies:
