@@ -1,8 +1,6 @@
 // https://momentjs.com/
 
 $(document).ready(function () {
-    var log = console.log; // for short hand when debugging
-    var dir = console.dir; // for short hand when debugging
     var calendarList = [];
     var timeblocks = ["09 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "03 PM", "04 PM", "05 PM",];// will try allow for this to be altered if time permits
     var today = moment();
@@ -47,13 +45,6 @@ $(document).ready(function () {
         // variables for the value (description) and hour the edit is occuring on
         var value = event.target.parentNode.parentNode.childNodes[1].value;
         var selectedTime = event.target.parentNode.parentNode.childNodes[0].textContent;
-
-        // block from editing past events (personal preference)
-        var selection = event.target.parentNode.parentNode.childNodes[1].classList[1];
-        if (selection === "past") {
-            $("#feedback").html("Can not edit a past time block");
-            return;
-        }
 
         // convert timeblock time from 09 AM to 24 hour time only
         var hourTime = moment(selectedTime, ["h A"]).format("HH");
@@ -122,6 +113,8 @@ $(document).ready(function () {
             // color the timeblock depending on where the time falls
             if (timeStamp < currentTime) {
                 description.addClass('past');
+                console.log(description)
+                description.attr('disabled', true);
             }
             else if (timeStamp === currentTime) {
                 description.addClass('present');
