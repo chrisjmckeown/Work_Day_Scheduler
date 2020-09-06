@@ -3,7 +3,7 @@
 * [Description](#Description)
 * [Usage](#Usage)
 * [Technologies Utilized](#Technologies-Utilized)
-* [Code Quiz Link](#Code-Quiz-Link)
+* [Work Day Scheduler Link](#Work-Day-Scheduler-Link)
 * [Contact](#Contact)
 
 ## Description
