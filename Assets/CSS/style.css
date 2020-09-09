@@ -28,6 +28,11 @@ textarea{
   color: black;
 }
 
+.container {
+  margin-bottom: 50px;
+}
+
+
 /* Container the rows sit in */
 .time-block{
   text-align: center;
