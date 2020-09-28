@@ -28,10 +28,9 @@ textarea{
   color: black;
 }
 
-.container {
+main .container {
   margin-bottom: 50px;
 }
-
 
 /* Container the rows sit in */
 .time-block{
@@ -94,4 +93,34 @@ textarea{
 .future {
   background-color: #77dd77;
   color: white;
+}
+
+/* styling the footer */
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+/* setting footer styles */
+.copyright-social-media {
+  margin: 0 auto;
+  height: 40px;
+  background-color:black;
+  display: flex;
+  justify-content: center; /* For horizontal alignment */
+  align-items: center; /* For vertical alignment */
+}
+
+/* social media div */
+.footer, .footer .copyright-social-media a{
+  font-size: 20px;
+  color: white;
+}
+.footer .copyright-social-media a{
+  padding-left: 10px;
+  text-decoration: none;
+}
+.footer .copyright-social-media a:hover{
+  color: red;
 }
