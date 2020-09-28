@@ -5,6 +5,7 @@
 * [Technologies Utilized](#Technologies-Utilized)
 * [Work Day Scheduler Link](#Work-Day-Scheduler-Link)
 * [Contact](#Contact)
+* [License](#License)
 
 ## Description
 A simple calendar application that allows the you to save events for each hour of the day. The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
@@ -42,3 +43,7 @@ Primary technologies:
 ## Contact
 
 * Please contact me at: chris.j.mckeown@hotmail.com
+
+## License
+
+* See license here: <a href="https://github.com/chrisjmckeown/Work_Day_Scheduler/blob/master/LICENSE" target="_blank">license agreement</a>
